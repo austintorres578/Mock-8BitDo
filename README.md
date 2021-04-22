@@ -6,4 +6,5 @@ technologies that will be used
   <li>HTML</li>
   <li>CSS</li>
   <li>Javascript</li>
+  <li>Bootstrap</li>
 </ul>
