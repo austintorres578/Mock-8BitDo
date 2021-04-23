@@ -8,3 +8,5 @@ technologies that will be used
   <li>Javascript</li>
   <li>Bootstrap</li>
 </ul>
+
+The two main goals of this project is to have something to put on my portfolio as a project I made, and to practice using bootstrap.
