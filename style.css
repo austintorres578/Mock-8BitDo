@@ -1,6 +1,22 @@
-@media (max-width:960px) {
-    .nav-right{
+@media(max-width:1074px){
+    .navbar ul li{
         display: none;
+    }
+    .desktop-logo{
+        display: none;
+    }
+    .navbar p{
+        display: none;
+    }
+    .navbar ul{
+        display: none;
+    }
+}
+@media (min-width: 670px){
+    .footer-content{
+        display: flex;
+        justify-content: space-around;
+        padding-right: 245px;
     }
 }
 
@@ -13,72 +29,100 @@ body{
     scroll-behavior: smooth;
 }
 .navbar{
-    display: flex;
-    justify-content: space-between;
+    height: 82px;
+    width: 100%;
     background-color: black;
-    padding-left: 60px;
-    padding-right: 60px;
-    height: 80px;  
+    margin-bottom: 0px;
+    z-index: 1;
 }
-
-.nav-left{
-    display: flex;
+.navbar a img{
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 75px;
 }
-
-.nav-left > img{
-margin-right: 25px;
-margin-top: auto;
-margin-bottom: auto;
-}
-
-.nav-left > a{
-    margin-left: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-decoration: none;
+.navbar p{
+    float: left;
+    margin-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: white;
-    transition: 0.5s;
 }
 
-.nav-left >a:hover{
+.navbar ul{
+    position: relative;
+    float: right;
+    margin-right: 75px;
+}
+.navbar ul li{
+    float: right;
+    list-style: none;
+    padding: 15px 0px 15px 0px;
+    margin-right: 25px;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+.navbar ul li ul{
+    position: absolute;
+    display: none;
+    left: -100px;
+    margin-top: 10px;
+    background-color: #222;
+    padding: 5px 0px 5px 0px;
+    border-radius: 5px;
+}
+.navbar ul li:hover ul{
+    display: block;
+}
+.navbar ul li ul li{ 
+    padding: 5px 0px 5px 10px;
+    margin-top: 5px;
+    display: block;
+    float: left;
+    width:96.6%;
+    transition: .5s;
+}
+.navbar ul li ul li:hover{
+    background-color: black;
+}
+
+.nav-links{
+    color: white;
+    transition: .5s;
+}
+.nav-links:hover{
     color: orange;
 }
-.nav-right{
-    margin-top: auto;
-    margin-bottom: auto;
-    }
-.active-link{
-  text-decoration: none;
+#active-page{
     color: orange;
-    padding-right: 10px;
+}
+.submenu-links{
+    color: #aaa;
+    font-size: 16px;
+    transition: .5s;
+}
+.submenu-links:hover{
+    color:white;
 }
 
-.nav-link{
-    text-decoration: none;
-    color: white;
-    padding-right: 10px;
-    transition: 0.5s;
-}
-.nav-link:hover{
-  color: orange;
-}
 .mySlides{
     height: 700px;
     width: 100%;
     position: relative;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     transition: .5s;
+    margin-top: 0px;
     }
     
-
-.hero-page-text{
-    text-align: left;
+.hero{
+    position: relative;
+    z-index: -1;
+}
+.hero-text{
     position: absolute;
-    top: 20%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    color: white;
 }
 .controller-section{
     width: 100%;
@@ -109,21 +153,23 @@ margin-bottom: auto;
     box-shadow: 2px 2px 5px gray;
 }
 
-.copyright-sec{
-    display: flex;
-    justify-content: space-around;
+.footer{
     height: fit-content;
     width: 100%;
     background-color: #282828;
+    padding-top: 15px;
     padding-bottom: 50px;
-    
 }
-.copyright-links{
+.footer-content{
+    padding-left: 15px;
+}
+
+.footer-links{
     text-decoration: none;
     color: gray;
     transition: .5s;
 }
-.copyright-links:hover{
+.footer-links:hover{
     color: orange;
 }
 
@@ -136,6 +182,7 @@ margin-bottom: auto;
 .contacts p{
     color: gray;
     margin: 0;
+    font-size: 14px;
 }
 .press{
     margin-top: 75px;
@@ -143,10 +190,12 @@ margin-bottom: auto;
 .press h2{
     color: white;
     margin: 0 0 25px 0;
+    font-weight: lighter;
 }
 .press p{
     color: gray;
     margin: 0;
+    font-size: 14px;
 }
 .about{
     margin-top: 75px;
@@ -154,8 +203,10 @@ margin-bottom: auto;
 .about h2{
     color: white;
     margin: 0 0 25px 0;
+    font-weight: lighter;
 }
 .about p{
     color: gray;
     margin: 0;
+    font-size: 14px;
 }
