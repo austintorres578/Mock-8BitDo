@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <script src="script.js"></script>
+  <title>Mock 8BitDo</title>
 </head>
 <body>
 
@@ -14,7 +15,8 @@
   <nav class="navbar">
     <a class="desktop-logo"href="#"><img src="C:\Users\19088\Documents\GitHub\Product Page nav practice\img\Screenshot (5).png" alt="" height="30px" width="115px"></a>
     <img class="mobile-logo" src="C:\Users\19088\Documents\GitHub\Product Page nav practice\img\Screenshot (5).png" alt="" height="40px" width="165px">
-    <img class="hamburger" src="C:\Users\19088\Documents\GitHub\Product Page\img\misc-menu-512.png" alt="" height="60px" width="60px">
+    <button class="hamburger" id="hambutton" onclick="toggleham()"><img src="C:\Users\19088\Documents\GitHub\Product Page\img\misc-menu-512.png" alt="" height="60px" width="60px"></button>
+    <button class="Xicon" id="Xicon" onclick="toggleX"><img src="https://th.bing.com/th/id/R4ccd4118a65634d8ea5a22c2e6e2c5a0?rik=vEBxg0b250vqbw&riu=http%3a%2f%2fwww.drodd.com%2fimages15%2fletter-x17.png&ehk=IPUb86AlyGDxXm59lzEVNE%2fiIBm%2fmXKup0KM7RRvghQ%3d&risl=&pid=ImgRaw" alt="" height="40px" width="40px"></button>
     <p>Austin Torres</p>
     <ul>
       <li><a class="nav-links" href="#">Contact</a></li>
@@ -47,6 +49,7 @@
     </ul>
   </nav>
 
+
   <!--Nav menu end-->
 
   <!--Hero page start-->
@@ -61,6 +64,17 @@
         <div class="sm-hero-text">
           <h2>8BitDo Pro 2. More Pro.</h2>
           <p>Play like a Pro with 8Bitdo's most advanced controller ever. An evolution of Pro+ in every way at a fraction of the price of competitor Pro controllers.</p>
+        </div>
+        <div class="hamburger-menu" id="hammenu">
+          <ul class="hamburger-links">
+            <li><a id="active-page" href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">DIY</a></li>
+            <li><a href="#">Press & Reviews</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
   </div>
 

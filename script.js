@@ -1,14 +1,15 @@
-var slideIndex = 0;
-carousel();
+var btn = document.getElementById("hambutton");
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 5000); 
+btn.addEventListener("click",toggleham);
+
+function toggleham(){
+
+    let ham = document.getElementById("hammenu");
+
+    if (ham.style.display ==="none") {
+        ham.style.display = "block";
+    }
+    else {
+        ham.style.display ="none";
+    }
 }

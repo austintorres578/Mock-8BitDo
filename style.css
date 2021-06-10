@@ -35,6 +35,12 @@ body{
     .hamburger{
         display: none; 
      }
+     .Xicon{
+         display: none;
+     }
+     .hamburger-links{
+         display: none;
+     }
 }
 
     .navbar{
@@ -55,6 +61,16 @@ body{
     }
     .hamburger{
         padding-top: 10px;
+        background-color: black;
+        border: none;
+        cursor: pointer;
+    }
+    .Xicon{
+        background: black;
+        padding-top: 10px;
+        cursor: pointer;
+        border: none;
+        display: none;
     }
 
     .navbar p{
@@ -181,11 +197,38 @@ body{
 .hero{
     position: relative;
     margin-top: 0px;
-    z-index: -1;
 }
 .hero-text{
     position: absolute;
 }
+.hamburger-menu{
+    display: none;
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.815);
+    width: 100%;
+}
+
+.hamburger-links{
+    list-style: none;
+    text-align: left;
+}
+.hamburger-links li{
+    font-size: 18px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.hamburger-links li a{
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    
+}
+.hamburger-links li a:hover{
+    color: orange;
+}
+
 
 /*Hero page end */
 
