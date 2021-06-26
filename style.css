@@ -38,7 +38,7 @@ body{
      .Xicon{
          display: none;
      }
-     .hamburger-links{
+     .hamburger-drop{
          display: none;
      }
 }
@@ -137,6 +137,9 @@ body{
     .submenu-links:hover{
         color:white;
     }
+    .submenu-drop ul{
+        z-index: 99;
+    }
 
 /*Nav menu end*/
 
@@ -209,26 +212,53 @@ body{
     width: 100%;
 }
 
-.hamburger-links{
+.hamburger-drop{
     list-style: none;
     text-align: left;
 }
-.hamburger-links li{
-    font-size: 18px;
+.hamlinks{
+    font-size: 15px;
     margin-bottom: 25px;
     margin-left: 15px;
     cursor: pointer;
 }
-.hamburger-links li a{
+.hamlinks a{
     color: white;
     text-decoration: none;
     transition: .5s;
     
 }
-.hamburger-links li a:hover{
+.hamlinks a:hover{
     color: orange;
 }
-
+.ham-diy-drop{
+    display: none;
+    margin-top: 20px;
+    margin-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    list-style: none;
+    border-radius: 5px;
+    background-color: rgb(34, 34, 34);
+}
+.ham-diy-drop li{
+    margin-left: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.ham-diy-drop li:hover{
+    background-color: black;
+}
+.ham-diy-drop li a{
+    color: white;
+}
+.ham-diy-drop li a:hover{
+    color: white;
+}
+.hero .hamburger-menu .hamburger-drop .diylink:hover .ham-diy-drop{
+	display: block;
+}
 
 /*Hero page end */
 
