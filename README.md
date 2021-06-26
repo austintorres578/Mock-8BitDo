@@ -5,6 +5,7 @@ technologies that will be used
 <ul>
   <li>HTML</li>
   <li>CSS</li>
+  <li>Javascript</li>
 </ul>
 
 The two main goals of this project is to have something to put on my portfolio as a project I made while also using this as practice.
